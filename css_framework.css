@@ -1,0 +1,358 @@
+ 
+:root {
+    /* 
+        Global CSS Tokens by Pivot Pixels 
+        Generated on 18.01.2024 | 05:46:28 | v1.03
+        Contains Classes and Variables
+    */
+  
+  
+    /* Colors */ 
+  
+    /* Primary HSLA Values */
+    --primary-h: 235;
+    --primary-s: 52%;
+    --primary-l: 54%;
+    --primary-a: 1;
+  
+    /* Secondary HSLA Values */
+    --secondary-h: ;
+    --secondary-s: ;
+    --secondary-l: ;
+    --secondary-a: 1;
+
+    /* Action HSLA Values */
+    --action-h: 135;
+    --action-s: 92%;
+    --action-l: 47%;
+    --action-a: 1;
+
+    /* Base HSLA Values */
+    --base-h: 0;
+    --base-s: 0%;
+    --base-l: 9%;
+    --base-a: 1;
+
+    /* Generic Colors */ 
+    --white: hsl(0, 0%, 100%); 
+    --black: hsl(0, 0%, 0%);
+    --transparent: hsl(0, 0%, 0%, 0); 
+    --success: hsl(136, 95%, 56%);
+    --danger: hsl(351, 95%, 56%);
+    --warning: hsl(48, 97%, 58%); 
+    --information: hsl(180, 46%, 44%);
+
+    /* Font Sizes */
+    --h1: clamp(4.88rem, calc(2.49vw + 4.08rem), 7.58rem);
+    --h2: clamp(3.91rem, calc(1.65vw + 3.38rem), 5.68rem);
+    --h3: clamp(3.13rem, calc(1.05vw + 2.79rem), 4.26rem);
+    --h4: clamp(2.5rem, calc(0.65vw + 2.29rem), 3.2rem);
+    --h5: clamp(2rem, calc(0.37vw + 1.88rem), 2.4rem);
+    --h6: clamp(1.6rem, calc(0.19vw + 1.54rem), 1.8rem);
+    --body-xl: clamp(2rem, calc(0.37vw + 1.88rem), 2.4rem);
+    --body: clamp(1.6rem, calc(0.19vw + 1.54rem), 1.8rem);
+    --body-s: clamp(1.28rem, calc(0.07vw + 1.26rem), 1.35rem);
+    --body-xs: clamp(1.02rem, calc(-0.01vw + 1.03rem), 1.01rem);
+
+    /* Spacing */
+    --space-4xs: clamp(0.52rem, calc(-0.03vw + 0.53rem), 0.49rem);
+    --space-3xs: clamp(0.66rem, calc(0.04vw + 0.64rem), 0.7rem);
+    --space-2xs: clamp(0.82rem, calc(0.16vw + 0.77rem), 0.99rem);
+    --space-xs: clamp(1.02rem, calc(0.35vw + 0.91rem), 1.4rem);
+    --space-s: clamp(1.28rem, calc(0.65vw + 1.07rem), 1.98rem);
+    --space-m: clamp(1.6rem, calc(1.11vw + 1.24rem), 2.8rem);
+    --space-l: clamp(2rem, calc(1.81vw + 1.42rem), 3.96rem);
+    --space-xl: clamp(2.5rem, calc(2.87vw + 1.58rem), 5.6rem);
+    --space-2xl: clamp(3.13rem, calc(4.44vw + 1.71rem), 7.92rem);
+    --space-3xl: clamp(3.91rem, calc(6.75vw + 1.75rem), 11.19rem);
+    --space-4xl: clamp(4.88rem, calc(10.13vw + 1.64rem), 15.83rem);
+
+    /* Radius */ 
+    --radius-xs: clamp(0.4rem, calc(0vw + 0.4rem), 0.4rem);
+    --radius-s: clamp(0.6rem, calc(-0.19vw + 0.86rem), 0.8rem);
+    --radius-m: clamp(1rem, calc(-0.19vw + 1.26rem), 1.2rem);
+    --radius-l: clamp(1.6rem, calc(-0.37vw + 2.12rem), 2rem);
+    --radius-xl: clamp(2.6rem, calc(-0.56vw + 3.38rem), 3.2rem);
+    --radius-full: 999rem;
+
+    /* BEM based Variables */
+    --section-pad-block: clamp(4rem, 1.912vw + 3.388rem, 6rem);
+    --section-pad-inline: clamp(1.5rem, 1.434vw + 1.041rem, 3rem);
+    --container-width: clamp(32rem, 100vw + 0rem, 136.6rem);
+    --grid-gap: clamp(2.5rem, calc(2.87vw + 1.58rem), 5.6rem);
+    --container-gap: clamp(2.5rem, calc(2.87vw + 1.58rem), 5.6rem);
+    --content-gap: clamp(1.6rem, calc(1.11vw + 1.24rem), 2.8rem);
+
+    /* Primary Color Variations*/
+    --primary: hsl(var(--primary-h) var(--primary-s) var(--primary-l) / var(--primary-a)); /* References the primary color */
+    --primary-comp: hsl(var(--primary-h) var(--primary-s) var(--primary-l) / var(--primary-a)); /* References the primary complimentary color */
+    --primary-hover: hsl(var(--primary-h) var(--primary-s) var(--primary-l) / var(--primary-a)); /*References the primary hover color */
+
+    --primary-trans-10: hsl(var(--primary-h), var(--primary-s), var(--primary-l), calc(var(--primary-a) * 0.1)); /* References the primary color at 10% opacity. */
+    --primary-trans-20: hsl(var(--primary-h), var(--primary-s), var(--primary-l), calc(var(--primary-a) * 0.2)); /* References the primary color at 20% opacity. */
+    --primary-trans-40: hsl(var(--primary-h), var(--primary-s), var(--primary-l), calc(var(--primary-a) * 0.4)); /* References the primary color at 40% opacity. */
+    --primary-trans-60: hsl(var(--primary-h), var(--primary-s), var(--primary-l), calc(var(--primary-a) * 0.6)); /* References the primary color at 60% opacity. */
+    --primary-trans-80: hsl(var(--primary-h), var(--primary-s), var(--primary-l), calc(var(--primary-a) * 0.8)); /* References the primary color at 80% opacity. */
+    --primary-trans-90: hsl(var(--primary-h), var(--primary-s), var(--primary-l), calc(var(--primary-a) * 0.9)); /* References the primary color at 90% opacity. */
+
+    --primary-ultra-light: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 40%)); /* References the Primary color ultra light version*/
+    --primary-ultra-light-trans-10: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 40%), calc(var(--primary-a) * 0.1)); /* References the Primary color ultra light version at 10% opacity*/
+    --primary-ultra-light-trans-20: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 40%), calc(var(--primary-a) * 0.2)); /* References the Primary color ultra light version at 20% opacity*/
+    --primary-ultra-light-trans-40: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 40%), calc(var(--primary-a) * 0.4)); /* References the Primary color ultra light version at 40% opacity*/
+    --primary-ultra-light-trans-60: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 40%), calc(var(--primary-a) * 0.6)); /* References the Primary color ultra light version at 60% opacity*/
+    --primary-ultra-light-trans-80: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 40%), calc(var(--primary-a) * 0.8)); /* References the Primary color ultra light version at 80% opacity*/
+    --primary-ultra-light-trans-90: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 40%), calc(var(--primary-a) * 0.9)); /* References the Primary color ultra light version at 90% opacity*/
+
+    --primary-light: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 20%)); /* References the Primary color light version*/
+    --primary-light-trans-10: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 20%), calc(var(--primary-a) * 0.1)); /* References the Primary color light version at 10% opacity*/
+    --primary-light-trans-20: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 20%), calc(var(--primary-a) * 0.2)); /* References the Primary color light version at 20% opacity*/
+    --primary-light-trans-40: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 20%), calc(var(--primary-a) * 0.4)); /* References the Primary color light version at 40% opacity*/
+    --primary-light-trans-60: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 20%), calc(var(--primary-a) * 0.6)); /* References the Primary color light version at 60% opacity*/
+    --primary-light-trans-80: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 20%), calc(var(--primary-a) * 0.8)); /* References the Primary color light version at 80% opacity*/
+    --primary-light-trans-90: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 20%), calc(var(--primary-a) * 0.9)); /* References the Primary color light version at 90% opacity*/
+
+    --primary-medium: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 10%)); /* References the Primary color medium version*/
+    --primary-medium-trans-10: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 10%), calc(var(--primary-a) * 0.1)); /* References the Primary color medium version at 10% opacity*/
+    --primary-medium-trans-20: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 10%), calc(var(--primary-a) * 0.2)); /* References the Primary color medium version at 20% opacity*/
+    --primary-medium-trans-40: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 10%), calc(var(--primary-a) * 0.4)); /* References the Primary color medium version at 40% opacity*/
+    --primary-medium-trans-60: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 10%), calc(var(--primary-a) * 0.6)); /* References the Primary color medium version at 60% opacity*/
+    --primary-medium-trans-80: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 10%), calc(var(--primary-a) * 0.8)); /* References the Primary color medium version at 80% opacity*/
+    --primary-medium-trans-90: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 10%), calc(var(--primary-a) * 0.9)); /* References the Primary color medium version at 90% opacity*/
+ 
+    --primary-dark: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 20%)); /* References the Primary color dark version*/
+    --primary-dark-trans-10: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 20%), calc(var(--primary-a) * 0.1)); /* References the Primary color dark version at 10% opacity*/
+    --primary-dark-trans-20: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 20%), calc(var(--primary-a) * 0.2)); /* References the Primary color dark version at 20% opacity*/
+    --primary-dark-trans-40: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 20%), calc(var(--primary-a) * 0.4)); /* References the Primary color dark version at 40% opacity*/
+    --primary-dark-trans-60: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 20%), calc(var(--primary-a) * 0.6)); /* References the Primary color dark version at 60% opacity*/
+    --primary-dark-trans-80: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 20%), calc(var(--primary-a) * 0.8)); /* References the Primary color dark version at 80% opacity*/
+    --primary-dark-trans-90: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 20%), calc(var(--primary-a) * 0.9)); /* References the Primary color dark version at 90% opacity*/
+
+    --primary-ultra-dark: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 40%)); /* References the Primary color ultra-dark version*/
+    --primary-ultra-dark-trans-10: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 40%), calc(var(--primary-a) * 0.1)); /* References the Primary color ultra-dark version at 10% opacity*/
+    --primary-ultra-dark-trans-20: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 40%), calc(var(--primary-a) * 0.2)); /* References the Primary color ultra-dark version at 20% opacity*/
+    --primary-ultra-dark-trans-40: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 40%), calc(var(--primary-a) * 0.4)); /* References the Primary color ultra-dark version at 40% opacity*/
+    --primary-ultra-dark-trans-60: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 40%), calc(var(--primary-a) * 0.6)); /* References the Primary color ultra-dark version at 60% opacity*/
+    --primary-ultra-dark-trans-80: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 40%), calc(var(--primary-a) * 0.8)); /* References the Primary color ultra-dark version at 80% opacity*/
+    --primary-ultra-dark-trans-90: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 40%), calc(var(--primary-a) * 0.9)); /* References the Primary color ultra-dark version at 90% opacity*/
+
+
+    /* Secondary Color Variations*/
+    --secondary: hsl(var(--secondary-h) var(--secondary-s) var(--secondary-l) / var(--secondary-a)); /* References the secondary color */
+    --secondary-comp: hsl(var(--secondary-h) var(--secondary-s) var(--secondary-l) / var(--secondary-a)); /* References the secondary complimentary color */
+    --secondary-hover: hsl(var(--secondary-h) var(--secondary-s) var(--secondary-l) / var(--secondary-a)); /*References the secondary hover color */
+
+    --secondary-trans-10: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l), calc(var(--secondary-a) * 0.1)); /* References the secondary color at 10% opacity. */
+    --secondary-trans-20: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l), calc(var(--secondary-a) * 0.2)); /* References the secondary color at 20% opacity. */
+    --secondary-trans-40: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l), calc(var(--secondary-a) * 0.4)); /* References the secondary color at 40% opacity. */
+    --secondary-trans-60: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l), calc(var(--secondary-a) * 0.6)); /* References the secondary color at 60% opacity. */
+    --secondary-trans-80: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l), calc(var(--secondary-a) * 0.8)); /* References the secondary color at 80% opacity. */
+    --secondary-trans-90: hsl(var(--secondary-h), var(--secondary-s), var(--secondary-l), calc(var(--secondary-a) * 0.9)); /* References the secondary color at 90% opacity. */
+
+    --secondary-ultra-light: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 40%)); /* References the secondary color ultra light version*/
+    --secondary-ultra-light-trans-10: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 40%), calc(var(--secondary-a) * 0.1)); /* References the secondary color ultra light version at 10% opacity*/
+    --secondary-ultra-light-trans-20: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 40%), calc(var(--secondary-a) * 0.2)); /* References the secondary color ultra light version at 20% opacity*/
+    --secondary-ultra-light-trans-40: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 40%), calc(var(--secondary-a) * 0.4)); /* References the secondary color ultra light version at 40% opacity*/
+    --secondary-ultra-light-trans-60: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 40%), calc(var(--secondary-a) * 0.6)); /* References the secondary color ultra light version at 60% opacity*/
+    --secondary-ultra-light-trans-80: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 40%), calc(var(--secondary-a) * 0.8)); /* References the secondary color ultra light version at 80% opacity*/
+    --secondary-ultra-light-trans-90: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 40%), calc(var(--secondary-a) * 0.9)); /* References the secondary color ultra light version at 90% opacity*/
+
+    --secondary-light: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 20%)); /* References the secondary color light version*/
+    --secondary-light-trans-10: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 20%), calc(var(--secondary-a) * 0.1)); /* References the secondary color light version at 10% opacity*/
+    --secondary-light-trans-20: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 20%), calc(var(--secondary-a) * 0.2)); /* References the secondary color light version at 20% opacity*/
+    --secondary-light-trans-40: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 20%), calc(var(--secondary-a) * 0.4)); /* References the secondary color light version at 40% opacity*/
+    --secondary-light-trans-60: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 20%), calc(var(--secondary-a) * 0.6)); /* References the secondary color light version at 60% opacity*/
+    --secondary-light-trans-80: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 20%), calc(var(--secondary-a) * 0.8)); /* References the secondary color light version at 80% opacity*/
+    --secondary-light-trans-90: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 20%), calc(var(--secondary-a) * 0.9)); /* References the secondary color light version at 90% opacity*/
+
+    --secondary-medium: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 10%)); /* References the secondary color medium version*/
+    --secondary-medium-trans-10: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 10%), calc(var(--secondary-a) * 0.1)); /* References the secondary color medium version at 10% opacity*/
+    --secondary-medium-trans-20: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 10%), calc(var(--secondary-a) * 0.2)); /* References the secondary color medium version at 20% opacity*/
+    --secondary-medium-trans-40: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 10%), calc(var(--secondary-a) * 0.4)); /* References the secondary color medium version at 40% opacity*/
+    --secondary-medium-trans-60: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 10%), calc(var(--secondary-a) * 0.6)); /* References the secondary color medium version at 60% opacity*/
+    --secondary-medium-trans-80: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 10%), calc(var(--secondary-a) * 0.8)); /* References the secondary color medium version at 80% opacity*/
+    --secondary-medium-trans-90: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) + 10%), calc(var(--secondary-a) * 0.9)); /* References the secondary color medium version at 90% opacity*/
+ 
+    --secondary-dark: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 20%)); /* References the secondary color dark version*/
+    --secondary-dark-trans-10: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 20%), calc(var(--secondary-a) * 0.1)); /* References the secondary color dark version at 10% opacity*/
+    --secondary-dark-trans-20: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 20%), calc(var(--secondary-a) * 0.2)); /* References the secondary color dark version at 20% opacity*/
+    --secondary-dark-trans-40: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 20%), calc(var(--secondary-a) * 0.4)); /* References the secondary color dark version at 40% opacity*/
+    --secondary-dark-trans-60: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 20%), calc(var(--secondary-a) * 0.6)); /* References the secondary color dark version at 60% opacity*/
+    --secondary-dark-trans-80: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 20%), calc(var(--secondary-a) * 0.8)); /* References the secondary color dark version at 80% opacity*/
+    --secondary-dark-trans-90: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 20%), calc(var(--secondary-a) * 0.9)); /* References the secondary color dark version at 90% opacity*/
+
+    --secondary-ultra-dark: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 40%)); /* References the secondary color ultra-dark version*/
+    --secondary-ultra-dark-trans-10: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 40%), calc(var(--secondary-a) * 0.1)); /* References the secondary color ultra-dark version at 10% opacity*/
+    --secondary-ultra-dark-trans-20: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 40%), calc(var(--secondary-a) * 0.2)); /* References the secondary color ultra-dark version at 20% opacity*/
+    --secondary-ultra-dark-trans-40: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 40%), calc(var(--secondary-a) * 0.4)); /* References the secondary color ultra-dark version at 40% opacity*/
+    --secondary-ultra-dark-trans-60: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 40%), calc(var(--secondary-a) * 0.6)); /* References the secondary color ultra-dark version at 60% opacity*/
+    --secondary-ultra-dark-trans-80: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 40%), calc(var(--secondary-a) * 0.8)); /* References the secondary color ultra-dark version at 80% opacity*/
+    --secondary-ultra-dark-trans-90: hsl(var(--secondary-h), var(--secondary-s), calc(var(--secondary-l) - 40%), calc(var(--secondary-a) * 0.9)); /* References the secondary color ultra-dark version at 90% opacity*/
+
+    /* Action Color Variations*/
+    --action: hsl(var(--action-h) var(--action-s) var(--action-l) / var(--action-a)); /* References the action color */
+    --action-comp: hsl(var(--action-h) var(--action-s) var(--action-l) / var(--action-a)); /* References the action complimentary color */
+    --action-hover: hsl(var(--action-h) var(--action-s) var(--action-l) / var(--action-a)); /*References the action hover color */
+
+    --action-trans-10: hsl(var(--action-h), var(--action-s), var(--action-l), calc(var(--action-a) * 0.1)); /* References the action color at 10% opacity. */
+    --action-trans-20: hsl(var(--action-h), var(--action-s), var(--action-l), calc(var(--action-a) * 0.2)); /* References the action color at 20% opacity. */
+    --action-trans-40: hsl(var(--action-h), var(--action-s), var(--action-l), calc(var(--action-a) * 0.4)); /* References the action color at 40% opacity. */
+    --action-trans-60: hsl(var(--action-h), var(--action-s), var(--action-l), calc(var(--action-a) * 0.6)); /* References the action color at 60% opacity. */
+    --action-trans-80: hsl(var(--action-h), var(--action-s), var(--action-l), calc(var(--action-a) * 0.8)); /* References the action color at 80% opacity. */
+    --action-trans-90: hsl(var(--action-h), var(--action-s), var(--action-l), calc(var(--action-a) * 0.9)); /* References the action color at 90% opacity. */
+
+    --action-ultra-light: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 40%)); /* References the action color ultra light version*/
+    --action-ultra-light-trans-10: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 40%), calc(var(--action-a) * 0.1)); /* References the action color ultra light version at 10% opacity*/
+    --action-ultra-light-trans-20: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 40%), calc(var(--action-a) * 0.2)); /* References the action color ultra light version at 20% opacity*/
+    --action-ultra-light-trans-40: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 40%), calc(var(--action-a) * 0.4)); /* References the action color ultra light version at 40% opacity*/
+    --action-ultra-light-trans-60: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 40%), calc(var(--action-a) * 0.6)); /* References the action color ultra light version at 60% opacity*/
+    --action-ultra-light-trans-80: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 40%), calc(var(--action-a) * 0.8)); /* References the action color ultra light version at 80% opacity*/
+    --action-ultra-light-trans-90: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 40%), calc(var(--action-a) * 0.9)); /* References the action color ultra light version at 90% opacity*/
+
+    --action-light: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 20%)); /* References the action color light version*/
+    --action-light-trans-10: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 20%), calc(var(--action-a) * 0.1)); /* References the action color light version at 10% opacity*/
+    --action-light-trans-20: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 20%), calc(var(--action-a) * 0.2)); /* References the action color light version at 20% opacity*/
+    --action-light-trans-40: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 20%), calc(var(--action-a) * 0.4)); /* References the action color light version at 40% opacity*/
+    --action-light-trans-60: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 20%), calc(var(--action-a) * 0.6)); /* References the action color light version at 60% opacity*/
+    --action-light-trans-80: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 20%), calc(var(--action-a) * 0.8)); /* References the action color light version at 80% opacity*/
+    --action-light-trans-90: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 20%), calc(var(--action-a) * 0.9)); /* References the action color light version at 90% opacity*/
+
+    --action-medium: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 10%)); /* References the action color medium version*/
+    --action-medium-trans-10: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 10%), calc(var(--action-a) * 0.1)); /* References the action color medium version at 10% opacity*/
+    --action-medium-trans-20: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 10%), calc(var(--action-a) * 0.2)); /* References the action color medium version at 20% opacity*/
+    --action-medium-trans-40: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 10%), calc(var(--action-a) * 0.4)); /* References the action color medium version at 40% opacity*/
+    --action-medium-trans-60: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 10%), calc(var(--action-a) * 0.6)); /* References the action color medium version at 60% opacity*/
+    --action-medium-trans-80: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 10%), calc(var(--action-a) * 0.8)); /* References the action color medium version at 80% opacity*/
+    --action-medium-trans-90: hsl(var(--action-h), var(--action-s), calc(var(--action-l) + 10%), calc(var(--action-a) * 0.9)); /* References the action color medium version at 90% opacity*/
+ 
+    --action-dark: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 20%)); /* References the action color dark version*/
+    --action-dark-trans-10: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 20%), calc(var(--action-a) * 0.1)); /* References the action color dark version at 10% opacity*/
+    --action-dark-trans-20: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 20%), calc(var(--action-a) * 0.2)); /* References the action color dark version at 20% opacity*/
+    --action-dark-trans-40: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 20%), calc(var(--action-a) * 0.4)); /* References the action color dark version at 40% opacity*/
+    --action-dark-trans-60: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 20%), calc(var(--action-a) * 0.6)); /* References the action color dark version at 60% opacity*/
+    --action-dark-trans-80: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 20%), calc(var(--action-a) * 0.8)); /* References the action color dark version at 80% opacity*/
+    --action-dark-trans-90: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 20%), calc(var(--action-a) * 0.9)); /* References the action color dark version at 90% opacity*/
+
+    --action-ultra-dark: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 40%)); /* References the action color ultra-dark version*/
+    --action-ultra-dark-trans-10: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 40%), calc(var(--action-a) * 0.1)); /* References the action color ultra-dark version at 10% opacity*/
+    --action-ultra-dark-trans-20: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 40%), calc(var(--action-a) * 0.2)); /* References the action color ultra-dark version at 20% opacity*/
+    --action-ultra-dark-trans-40: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 40%), calc(var(--action-a) * 0.4)); /* References the action color ultra-dark version at 40% opacity*/
+    --action-ultra-dark-trans-60: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 40%), calc(var(--action-a) * 0.6)); /* References the action color ultra-dark version at 60% opacity*/
+    --action-ultra-dark-trans-80: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 40%), calc(var(--action-a) * 0.8)); /* References the action color ultra-dark version at 80% opacity*/
+    --action-ultra-dark-trans-90: hsl(var(--action-h), var(--action-s), calc(var(--action-l) - 40%), calc(var(--action-a) * 0.9)); /* References the action color ultra-dark version at 90% opacity*/
+
+    /* Base Color Variations*/
+    --base: hsl(var(--base-h) var(--base-s) var(--base-l) / var(--base-a)); /* References the base color */
+    --base-comp: hsl(var(--base-h) var(--base-s) var(--base-l) / var(--base-a)); /* References the base complimentary color */
+    --base-hover: hsl(var(--base-h) var(--base-s) var(--base-l) / var(--base-a)); /*References the base hover color */
+
+    --base-trans-10: hsl(var(--base-h), var(--base-s), var(--base-l), calc(var(--base-a) * 0.1)); /* References the base color at 10% opacity. */
+    --base-trans-20: hsl(var(--base-h), var(--base-s), var(--base-l), calc(var(--base-a) * 0.2)); /* References the base color at 20% opacity. */
+    --base-trans-40: hsl(var(--base-h), var(--base-s), var(--base-l), calc(var(--base-a) * 0.4)); /* References the base color at 40% opacity. */
+    --base-trans-60: hsl(var(--base-h), var(--base-s), var(--base-l), calc(var(--base-a) * 0.6)); /* References the base color at 60% opacity. */
+    --base-trans-80: hsl(var(--base-h), var(--base-s), var(--base-l), calc(var(--base-a) * 0.8)); /* References the base color at 80% opacity. */
+    --base-trans-90: hsl(var(--base-h), var(--base-s), var(--base-l), calc(var(--base-a) * 0.9)); /* References the base color at 90% opacity. */
+
+    --base-ultra-light: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 40%)); /* References the base color ultra light version*/
+    --base-ultra-light-trans-10: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), calc(var(--base-a) * 0.1)); /* References the base color ultra light version at 10% opacity*/
+    --base-ultra-light-trans-20: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), calc(var(--base-a) * 0.2)); /* References the base color ultra light version at 20% opacity*/
+    --base-ultra-light-trans-40: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), calc(var(--base-a) * 0.4)); /* References the base color ultra light version at 40% opacity*/
+    --base-ultra-light-trans-60: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), calc(var(--base-a) * 0.6)); /* References the base color ultra light version at 60% opacity*/
+    --base-ultra-light-trans-80: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), calc(var(--base-a) * 0.8)); /* References the base color ultra light version at 80% opacity*/
+    --base-ultra-light-trans-90: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 40%), calc(var(--base-a) * 0.9)); /* References the base color ultra light version at 90% opacity*/
+
+    --base-light: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%)); /* References the base color light version*/
+    --base-light-trans-10: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%), calc(var(--base-a) * 0.1)); /* References the base color light version at 10% opacity*/
+    --base-light-trans-20: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%), calc(var(--base-a) * 0.2)); /* References the base color light version at 20% opacity*/
+    --base-light-trans-40: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%), calc(var(--base-a) * 0.4)); /* References the base color light version at 40% opacity*/
+    --base-light-trans-60: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%), calc(var(--base-a) * 0.6)); /* References the base color light version at 60% opacity*/
+    --base-light-trans-80: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%), calc(var(--base-a) * 0.8)); /* References the base color light version at 80% opacity*/
+    --base-light-trans-90: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 20%), calc(var(--base-a) * 0.9)); /* References the base color light version at 90% opacity*/
+
+    --base-medium: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 10%)); /* References the base color medium version*/
+    --base-medium-trans-10: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 10%), calc(var(--base-a) * 0.1)); /* References the base color medium version at 10% opacity*/
+    --base-medium-trans-20: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 10%), calc(var(--base-a) * 0.2)); /* References the base color medium version at 20% opacity*/
+    --base-medium-trans-40: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 10%), calc(var(--base-a) * 0.4)); /* References the base color medium version at 40% opacity*/
+    --base-medium-trans-60: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 10%), calc(var(--base-a) * 0.6)); /* References the base color medium version at 60% opacity*/
+    --base-medium-trans-80: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 10%), calc(var(--base-a) * 0.8)); /* References the base color medium version at 80% opacity*/
+    --base-medium-trans-90: hsl(var(--base-h), var(--base-s), calc(var(--base-l) + 10%), calc(var(--base-a) * 0.9)); /* References the base color medium version at 90% opacity*/
+ 
+    --base-dark: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%)); /* References the base color dark version*/
+    --base-dark-trans-10: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%), calc(var(--base-a) * 0.1)); /* References the base color dark version at 10% opacity*/
+    --base-dark-trans-20: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%), calc(var(--base-a) * 0.2)); /* References the base color dark version at 20% opacity*/
+    --base-dark-trans-40: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%), calc(var(--base-a) * 0.4)); /* References the base color dark version at 40% opacity*/
+    --base-dark-trans-60: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%), calc(var(--base-a) * 0.6)); /* References the base color dark version at 60% opacity*/
+    --base-dark-trans-80: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%), calc(var(--base-a) * 0.8)); /* References the base color dark version at 80% opacity*/
+    --base-dark-trans-90: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 20%), calc(var(--base-a) * 0.9)); /* References the base color dark version at 90% opacity*/
+
+    --base-ultra-dark: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 40%)); /* References the base color ultra-dark version*/
+    --base-ultra-dark-trans-10: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 40%), calc(var(--base-a) * 0.1)); /* References the base color ultra-dark version at 10% opacity*/
+    --base-ultra-dark-trans-20: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 40%), calc(var(--base-a) * 0.2)); /* References the base color ultra-dark version at 20% opacity*/
+    --base-ultra-dark-trans-40: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 40%), calc(var(--base-a) * 0.4)); /* References the base color ultra-dark version at 40% opacity*/
+    --base-ultra-dark-trans-60: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 40%), calc(var(--base-a) * 0.6)); /* References the base color ultra-dark version at 60% opacity*/
+    --base-ultra-dark-trans-80: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 40%), calc(var(--base-a) * 0.8)); /* References the base color ultra-dark version at 80% opacity*/
+    --base-ultra-dark-trans-90: hsl(var(--base-h), var(--base-s), calc(var(--base-l) - 40%), calc(var(--base-a) * 0.9)); /* References the base color ultra-dark version at 90% opacity*/
+
+    
+}
+
+/* Class Based Variables */ 
+/* Layout Structures */ 
+.grid--2 {
+    display: grid;
+    grid-template-columns: repeat( 2, minmax(250px, 1fr) );
+}
+.grid--3 {
+    display: grid;
+    grid-template-columns: repeat( 3, minmax(250px, 1fr) )}
+.grid--4 {
+    display: grid;
+    grid-template-columns: repeat( 4, minmax(250px, 1fr) );
+}
+.grid--5 {
+    display: grid;
+    grid-template-columns: repeat( 5, minmax(250px, 1fr) );
+}
+.grid--6 {
+    display: grid;
+    grid-template-columns: repeat( 6, minmax(250px, 1fr) );
+}
+.grid--7 {
+    display: grid;
+    grid-template-columns: repeat( 7, minmax(250px, 1fr) );
+}
+.grid--8 {
+    display: grid;
+    grid-template-columns: repeat( 8, minmax(250px, 1fr) );
+}
+.grid-auto--5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(5rem, 1fr));
+}
+.grid-auto--10 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem, 1fr));
+}
+.grid-auto--20 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
+}
+.grid-auto--30 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+}
+.grid-auto--40 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem, 1fr));
+}
+.grid-auto--50 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50rem, 1fr));
+}
+.grid-auto--60 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(60rem, 1fr));
+}
+.grid-auto--70 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(70rem, 1fr));
+}
